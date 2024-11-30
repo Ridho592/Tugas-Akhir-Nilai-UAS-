@@ -107,3 +107,4 @@ p = cv2.goodFeaturesToTrack(prev_gray_frame, mask=None, **feature_params)
 - Area dekat fitur yang sudah dilacak dihindari agar fitur baru tidak terdeteksi terlalu dekat dengan yang lama.
 ---
 **Gambar Hasil Percobaan :**
+![Alt Text](https://github.com/Ridho592/Project-PCD/blob/main/Pengujian%20Kualitas%20Citra%20dan%20UAS/Hasil%20image%20LucasKanadeTracking/original%20frame.png)
