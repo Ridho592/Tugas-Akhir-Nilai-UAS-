@@ -60,6 +60,7 @@ Menggunakan `cv2.calcOpticalFlowPyrLK` untuk menghitung pergerakan fitur antar f
 ```python
 p1, state, err = cv2.calcOpticalFlowPyrLK(prev_gray_frame, curr_gray_frame, p0, None, **lk_params)
 p0r, state, err = cv2.calcOpticalFlowPyrLK(curr_gray_frame, prev_gray_frame, p1, None, **lk_params)
+```python
 
 ### Input
 - **`prev_gray_frame`**: Frame sebelumnya dalam format grayscale.
