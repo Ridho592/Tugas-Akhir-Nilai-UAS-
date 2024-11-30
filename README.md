@@ -95,3 +95,14 @@ cv2.polylines(output, [np.int32(tr) for tr in tracks], False, [0, 0, 255], 2)
 
 ## 3. Deteksi Fitur Baru
 Setiap 100 frame, fitur baru dideteksi menggunakan Shi-Tomasi Corner Detection `cv2.goodFeaturesToTrack`
+
+```python
+mask = 255 * np.ones(curr_gray_frame.shape, dtype=np.uint8)
+for x, y in [np.int32(tr[-1]) for tr in tracks]:
+    cv2.circle(mask, (x, y), 5, 0, -1)
+p = cv2.goodFeaturesToTrack(prev_gray_frame, mask=None, **feature_params)
+```
+
+### Masking
+- Area dekat fitur yang sudah dilacak dihindari agar fitur baru tidak terdeteksi terlalu dekat dengan yang lama.
+
