@@ -54,7 +54,6 @@ Menampilkan berbagai hasil:
 ---
 Bagian kode yang berfungsi untuk **mendeteksi pergerakan** yang menggunakan algoritma **Lucas-Kanade** adalah sebagai berikut : 
 ## 1. Deteksi Optical Flow (Pergerakan Fitur)
-
 Menggunakan `cv2.calcOpticalFlowPyrLK` untuk menghitung pergerakan fitur antar frame.
 
 ```python
@@ -72,3 +71,24 @@ p0r, state, err = cv2.calcOpticalFlowPyrLK(curr_gray_frame, prev_gray_frame, p1,
 - **`err`**: Kesalahan estimasi untuk setiap fitur.
 
 ## 2. Memperbarui dan Menggambar Lintasan
+Menambahkan koordinat terbaru fitur ke lintasan dan menggambar lintasan tersebut.
+
+```python
+new_tracks = []
+for tr, (x, y), good_flag in zip(tracks, p1.reshape(-1, 2), good):
+    if not good_flag:
+        continue
+    tr.append((x, y))
+    if len(tr) > track_length:
+        del tr[0]
+    new_tracks.append(tr)
+tracks = new_tracks
+cv2.polylines(output, [np.int32(tr) for tr in tracks], False, [0, 0, 255], 2)
+```
+
+### Update lintasan fitur:
+- Menambahkan koordinat terbaru (x, y) ke lintasan tr jika fitur valid.
+- Menghapus koordinat lama jika panjang lintasan melebihi batas (track_length).
+- Menyimpan lintasan fitur valid ke dalam new_tracks.
+### Gambar lintasan:
+- Menggunakan `cv2.polylines` untuk menggambar lintasan fitur pada frame output menggunakan koordinat dalam `tracks`.
