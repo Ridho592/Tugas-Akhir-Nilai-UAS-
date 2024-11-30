@@ -111,3 +111,6 @@ p = cv2.goodFeaturesToTrack(prev_gray_frame, mask=None, **feature_params)
 
 - **Original Image**
 <img src="https://github.com/Ridho592/Project-PCD/blob/main/Pengujian%20Kualitas%20Citra%20dan%20UAS/Hasil%20image%20LucasKanadeTracking/original%20frame.png" alt="Original Image" width="400" /> 
+
+- **Grayscale**
+<img src="[https://github.com/Ridho592/Project-PCD/blob/main/Pengujian%20Kualitas%20Citra%20dan%20UAS/Hasil%20image%20LucasKanadeTracking/original%20frame.png](https://github.com/Ridho592/Project-PCD/blob/main/Pengujian%20Kualitas%20Citra%20dan%20UAS/Hasil%20image%20LucasKanadeTracking/grayscale.png)" alt="Grayscale" width="400" /> 
