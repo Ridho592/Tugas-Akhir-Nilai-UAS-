@@ -86,9 +86,12 @@ tracks = new_tracks
 cv2.polylines(output, [np.int32(tr) for tr in tracks], False, [0, 0, 255], 2)
 ```
 
-### Update lintasan fitur:
+### Update lintasan fitur
 - Menambahkan koordinat terbaru (x, y) ke lintasan tr jika fitur valid.
 - Menghapus koordinat lama jika panjang lintasan melebihi batas (track_length).
 - Menyimpan lintasan fitur valid ke dalam new_tracks.
-### Gambar lintasan:
+### Gambar lintasan
 - Menggunakan `cv2.polylines` untuk menggambar lintasan fitur pada frame output menggunakan koordinat dalam `tracks`.
+
+## 3. Deteksi Fitur Baru
+Setiap 100 frame, fitur baru dideteksi menggunakan Shi-Tomasi Corner Detection `cv2.goodFeaturesToTrack`
