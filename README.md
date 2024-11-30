@@ -105,4 +105,4 @@ p = cv2.goodFeaturesToTrack(prev_gray_frame, mask=None, **feature_params)
 
 ### Masking
 - Area dekat fitur yang sudah dilacak dihindari agar fitur baru tidak terdeteksi terlalu dekat dengan yang lama.
-
+---
