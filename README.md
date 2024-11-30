@@ -3,8 +3,8 @@
  
 ## Fitur Utama
 ### 1. **Fungsi Utama**
-- `image_resize`: Mengubah ukuran gambar berdasarkan lebar atau tinggi yang diberikan, dengan mempertahankan aspek rasio gambar.
-- `add_text`: Menambahkan teks ke dalam gambar pada posisi tertentu dengan font, ukuran, warna, dan ketebalan tertentu.
+- `image_resize`: Mengubah ukuran gambar berdasarkan lebar atau tinggi yang diberikan.
+- `add_text`: Menambahkan teks ke dalam gambar pada posisi tertentu dengan font, ukuran, warna, dan ketebalan yang diberikan.
 
 ### 2. **Argumen Masukan**
 Menggunakan `argparse` untuk memproses argumen dari command line:
