@@ -110,13 +110,13 @@ p = cv2.goodFeaturesToTrack(prev_gray_frame, mask=None, **feature_params)
 --
 
 - **Original Image**
-<img src="https://github.com/Ridho592/Project-PCD/blob/main/Pengujian%20Kualitas%20Citra%20dan%20UAS/Hasil%20image%20LucasKanadeTracking/original%20frame.png" alt="Original Image" width="400" /> 
+<img src="https://github.com/Ridho592/Project-PCD/blob/main/Pengujian%20Kualitas%20Citra%20dan%20UAS/Hasil%20image%20LucasKanadeTracking/original%20frame.png" alt="Original Image" width="450" /> 
 
 - **Grayscale**
-<img src="https://github.com/Ridho592/Project-PCD/blob/main/Pengujian%20Kualitas%20Citra%20dan%20UAS/Hasil%20image%20LucasKanadeTracking/grayscale.png" alt="Grayscale" width="400" /> 
+<img src="https://github.com/Ridho592/Project-PCD/blob/main/Pengujian%20Kualitas%20Citra%20dan%20UAS/Hasil%20image%20LucasKanadeTracking/grayscale.png" alt="Grayscale" width="450" /> 
 
 - **Hasil Mengikuti Gerakan**
-<img src="https://github.com/Ridho592/Project-PCD/blob/main/Pengujian%20Kualitas%20Citra%20dan%20UAS/Hasil%20image%20LucasKanadeTracking/hasil%20mengikuti%20gerakan.png" alt="Grayscale" width="400" /> 
+<img src="https://github.com/Ridho592/Project-PCD/blob/main/Pengujian%20Kualitas%20Citra%20dan%20UAS/Hasil%20image%20LucasKanadeTracking/hasil%20mengikuti%20gerakan.png" alt="Grayscale" width="450" /> 
 
 - **Hasil Gerak Diam**
-<img src="https://github.com/Ridho592/Project-PCD/blob/main/Pengujian%20Kualitas%20Citra%20dan%20UAS/Hasil%20image%20LucasKanadeTracking/hasil%20gerak%20diam.png" alt="Grayscale" width="400" /> 
+<img src="https://github.com/Ridho592/Project-PCD/blob/main/Pengujian%20Kualitas%20Citra%20dan%20UAS/Hasil%20image%20LucasKanadeTracking/hasil%20gerak%20diam.png" alt="Grayscale" width="450" /> 
