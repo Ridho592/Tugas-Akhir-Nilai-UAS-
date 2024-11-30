@@ -52,4 +52,4 @@ Menampilkan berbagai hasil:
 - Tekan `r` untuk mereset semua lintasan pelacakan.
 
 ---
-
+Bagian kode yang berfungsi untuk **mendeteksi pergerakan** yang menggunakan algoritma **Lucas-Kanade** adalah sebagai berikut : 
