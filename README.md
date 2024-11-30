@@ -53,8 +53,3 @@ Menampilkan berbagai hasil:
 
 ---
 
-## Instalasi dan Penggunaan
-1. Pastikan Python dan OpenCV telah terinstal di sistem Anda.
-2. Jalankan skrip menggunakan perintah berikut:
-   ```bash
-   python script_name.py --video <path_to_video> --max_corners 100
