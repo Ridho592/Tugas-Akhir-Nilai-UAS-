@@ -66,7 +66,6 @@ p0r, state, err = cv2.calcOpticalFlowPyrLK(curr_gray_frame, prev_gray_frame, p1,
 - **`prev_gray_frame`**: Frame sebelumnya dalam format grayscale.
 - **`curr_gray_frame`**: Frame saat ini dalam format grayscale.
 - **`p0`**: Koordinat fitur yang dilacak pada frame sebelumnya.
-
 ### Output
 - **`p1`**: Lokasi fitur pada frame saat ini.
 - **`state`**: Status pelacakan (berhasil atau tidak) untuk setiap fitur.
